@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Build files
+build/
+dist/
+
+# Dependency directories
+lib/
+lib-cov/
+
+# Compiled binary addons
+*.node
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
