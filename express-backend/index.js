@@ -1,16 +1,20 @@
-const express = require("express");
-const mysql = require("mysql");
-const faker = require("faker");
+import express from "express";
+import mysql from "mysql";
+import faker from "faker";
+import dotenv from "dotenv"; // Import dotenv for loading environment variables
+
+// Load environment variables from .env file
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Configure MySQL connection
 const connection = mysql.createConnection({
-  host: "your-mysql-host",
-  user: "your-mysql-username",
-  password: "your-mysql-password",
-  database: "your-database-name",
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
 
 connection.connect();
