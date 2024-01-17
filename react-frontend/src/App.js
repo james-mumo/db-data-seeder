@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import ViewsDataComponent from "./components/ViewsDataComponent";
+import SeedButtonComponent from "./components/SeedButtonComponent";
+import SeedData from "./components/SeedData";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex h-screen bg-gray-100">
+      {/* Left side with ViewsDataComponent */}
+      <div className="w-1/2 bg-gray-800 text-white p-8">
+        <ViewsDataComponent />
+      </div>
+
+      {/* Right side with SeedButtonComponent */}
+      <div className="w-1/2 bg-gray-200 p-8">
+        <SeedData />
+      </div>
     </div>
   );
 }

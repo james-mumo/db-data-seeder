@@ -1,4 +1,9 @@
 ## env files
 
 PORT = 3001
+PORT = 3001
 
+DB_HOST=127.0.0.1
+DB_USER="root"
+DB_PASSWORD=""
+DB_NAME= demo
